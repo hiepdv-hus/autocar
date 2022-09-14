@@ -73,7 +73,7 @@ p {
 .ourBlog .job-company-logo {
   border-radius: 0;
   height: 91px;
-  width: 100%;
+  width: auto;
 }
 .jobguru-btn {
   display: inline-block;
@@ -157,7 +157,6 @@ header .jobguru-btn:hover {
   margin-bottom: 25px;
   color: #26BC51;
 }
-
 .site-heading p {
   color: #777;
   font-size: 15px;
@@ -790,6 +789,25 @@ header ul li:hover ul li:hover ul {
   width: 100%;
   position: relative;
 }
+.banner-text .carousel .button-carousel {
+  display: none;
+}
+.banner-text .carousel:hover .button-carousel {
+  display: block;
+}
+.button-carousel .iconCarousel{
+  background: #1D2433;
+  padding: 5px 15px;
+  border-radius: 4px;
+  box-shadow: 0px 20px 40px rgb(0 0 0 / 5%);
+}
+.button-carousel .iconCarousel img{
+  width: 15px;
+}
+.carousel-control-prev, .carousel-control-next {
+  display: block;
+  width: 10%;
+}
 .elementor-background-overlay {
   width: 100%;
   position: absolute;
@@ -998,14 +1016,14 @@ header ul li:hover ul li:hover ul {
 .ourBlog .blogLeft {
   background-color: #e9e9ef;
 }
-.ourBlog .blogLeft img{
-  height: 321px;
-}
 .ourBlog .blogRight .text-muted {
   font-size: 13px;
 }
 .ourBlog .job-company-item {
   margin-bottom: -7px;
+}
+.ourBlog .job-company-content {
+  width: 70%;
 }
 .ourBlog .writer i.fa {
   display: inline;
@@ -1142,11 +1160,30 @@ a.read-more:hover {
 .blogRight .card .card-body{
   padding: 0;
 }
+.feature-category .tab-content1,
+.sidebar-list-single {
+  display: block;
+  background: #fff;
+  border: 1px solid #DDDDDD;
+  box-shadow: 0px 20px 40px rgb(0 0 0 / 5%);
+  /* -webkit-transition: all 0.4s ease 0s; */
+  /* transition: all 0.4s ease 0s; */
+  padding: 20px;
+  border-radius: 4px;
+}
+.feature-category .tab-content1:hover,
+.sidebar-list-single:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0 2px var(--bs-primary);
+  -moz-box-shadow: 0 0 0 2px var(--bs-primary);
+  box-shadow: 0 0 0 2px var(--bs-primary);
+}
+
+
 .tab-content li,
 .sidebar-list-single {
   display: block;
   border: 1px solid #DDDDDD;
-  background: #fff none repeat scroll 0 0;
   box-shadow: 0px 20px 40px rgb(0 0 0 / 5%);
   /* -webkit-transition: all 0.4s ease 0s; */
   /* transition: all 0.4s ease 0s; */
@@ -1182,7 +1219,7 @@ a.read-more:hover {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 0 0 2px var(--bs-primary);
   -moz-box-shadow: 0 0 0 2px var(--bs-primary);
-  box-shadow: 0 0 0 2pxvar(--bs-primary);
+  box-shadow: 0 0 0 2px var(--bs-primary);
 }
 
 .top-company-list .company-list-logo {

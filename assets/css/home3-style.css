@@ -1616,6 +1616,9 @@ Responsive
     color: #fff;
     display: none;
   }
+  a.signUp-btn {
+    color: #fff !important;
+}
   header.jobguru-header-area.stick-top.forsticky.sticky .menuRight span {
     color: var(--bs-primary)
   }
